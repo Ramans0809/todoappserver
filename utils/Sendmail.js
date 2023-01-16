@@ -7,7 +7,7 @@ const sendmail=async (email,subject,text)=>{
         service:"gmail",
         auth:{
             user:'localtest0809@gmail.com',
-            pass:'zvsjaxvkcrwsnadz'
+            pass:process.env.MAIL_PASS
         }
     })
 
