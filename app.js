@@ -17,4 +17,8 @@ app.use(fileUpload({
 app.use(cors())
 app.use('/api/v1',userroutes)
 
+app.get("/",(req,res)=>{
+    res.send("server is working")
+})
+
 module.exports=app
